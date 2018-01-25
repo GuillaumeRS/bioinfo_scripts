@@ -7,7 +7,7 @@ with open("ribo_only_depth_of_coverage_samtools.csv") as f:
 		pos_int = int(pos)
 		depth_int = int(depth)
 		if depth_int == 0 and covered_zone:
-			print scaf,"\t",start,"\t",stop
+			print "%s\t%s\t%s" % (scaf,start,stop)
 			covered_zone = False
 		if depth_int >= 1:
 			if covered_zone:
