@@ -2,7 +2,7 @@
 # Given a threshold of minimum major allelic depth frequency, and positions of studied
 # samples (0 = first sample), it will print only variants with major allelic frequency greater than the 
 # threshold for all the studied samples.
-# arguments in this order : /path_to_vcf.vcf min_major_allelic_depth_threshold sample_1_pos sample_2_pos sample_N_pos...
+# arguments in this order : /path_to_vcf.vcf min_major_allelic_ratio_threshold sample_1_pos sample_2_pos sample_N_pos...
 # ex : python ./filter_allelic_frequency.py ./test.vcf 0.6 1 3
 
 import sys
